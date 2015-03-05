@@ -284,6 +284,7 @@ DateTimeField = React.createClass({
             <div className="input-group date" ref="datetimepicker">
               <input type="text" className="form-control" onChange={this.onChange} value={this.state.selectedDate.format(this.props.inputFormat)} />
               <span className="input-group-addon" onClick={this.onClick} onBlur={this.onBlur} ref="dtpbutton"><Glyphicon glyph="calendar" /></span>
+              {this.props.children}
             </div>
           </div>
     );
